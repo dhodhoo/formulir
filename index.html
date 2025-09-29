@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulir Pendaftaran</title>
+  </head>
+  <body>
+    <form>
+      <div class="formContainer">
+        <fieldset class="background">
+          <legend><h1 class="title">Formulir Pendaftaran</h1></legend>
+          <label for="name">Nama Lengkap:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Cth: Andhika Yuridho"
+            required
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Cth: andhikayuridho@student.telkomuniversity.ac.id"
+            required
+          />
+          <label for="number">Nomor Telepon:</label>
+          <input
+            type="tel"
+            id="number"
+            name="number"
+            pattern="(\+62|0)[0-9]{9,}"
+            placeholder="Cth: 087709206850"
+            required
+          />
+          <label for="password">Kata Sandi:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Cth: ********"
+            required
+          />
+          <label for="country">Negara:</label>
+          <select id="country" name="country" required>
+            <option value="">Pilih Negara</option>
+            <option value="indonesia">Indonesia</option>
+            <option value="malaysia">Malaysia</option>
+            <option value="singapore">Singapore</option>
+            <option value="thailand">Thailand</option>
+          </select>
+          <label for="browser">Browser Yang Digunakan:</label>
+          <input
+            type="url"
+            id="browser"
+            name="browser"
+            placeholder="Cth: https://www.google.com"
+          />
+          <div class="fileInputs">
+            <div class="cvInput">
+              <label for="file">Masukkan CV:</label>
+              <input
+                type="file"
+                id="file"
+                name="file"
+                accept=".pdf,.doc,.docx"
+              />
+            </div>
+            <div class="imageInput">
+              <label for="image">Foto 4x6:</label>
+              <input
+                type="file"
+                id="image"
+                name="image"
+                accept=".jpg,.jpeg,.png"
+              />
+            </div>
+          </div>
+          <label for="message">Pesan:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Tulis pesan Anda di sini..."
+          ></textarea>
+          <button type="submit" id="register">Daftar</button>
+        </fieldset>
+      </div>
+    </form>
+  </body>
+</html>
